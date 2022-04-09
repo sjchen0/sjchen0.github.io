@@ -7,17 +7,21 @@
 
 <html lang="en">
 <head>
-  <title>Sijin Chen's Homepage</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=PT Serif' rel='stylesheet'>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <title>Sijin Chen's Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=PT Serif' rel='stylesheet'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 </head>
 
 <style>
@@ -32,140 +36,128 @@
 
 
 <!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#publications">Publications</a></li> 
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#talks">Talks</a></li>
-				  <li><a href="#CV">CV</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
-    <div class="container">
 
-        <div class="row">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav offset-2">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="#publications">Publications</a>
+        <a class="nav-item nav-link" href="#projects">Projects</a>
+        <a class="nav-item nav-link" href="#talks">Talks</a>
+      </div>
+    </div>
+  </nav>
 
-            
-            
-            <!-- Links on the Sidebar -->
+<!--
+<ul class="nav justify-content-center">
+    <li class="nav-item"><a href="index.html">Home</a></li>
+    <li class="nav-item"><a href="#publications">Publications</a></li> 
+    <li class="nav-item"><a href="#projects">Projects</a></li>
+    <li class="nav-item"><a href="#talks">Talks</a></li>
+    <li class="nav-item"><a href="#CV">CV</a></li> 
+</ul>
+-->
 
-            <!-- Entries Column -->
-            <div class="col-md-8">
-                
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 offset-2 px-1 bg-white position-fixed" id="sticky-sidebar">
+            <div>
                 <!-- Main Image -->
-                <img class="img-responsive" src="img/profile-1.jpg" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-                  <p style="font-size:18px">
-                    I am a penultimate undergraduate student at <a href="https://www.cuhk.edu.hk/english/">the Chinese University of Hong Kong</a>, pursuing a major in <a href="https://www.cse.cuhk.edu.hk/">computer science</a> and a minor in <a href="https://www.math.cuhk.edu.hk/">mathematics</a>. My current research interest lies in the theory and provable algorithms for optimization and machine learning, with a general zeal for solving practical problems with rigorous mathematics.
-                  </p>
-                  
-                  <p style="font-size:18px">
-                    I am exceedingly honored and thrilled to announce that I will visit <a href="https://users.ece.cmu.edu/~yuejiec/">Prof. Yuejie Chi</a>@CMU and <a href="https://www.stern.nyu.edu/faculty/bio/jiawei-zhang">Prof. Jiawei Zhang</a>@NYU's group successively by my graduation. I have just completed a research project on non-convex optimization theory supervised by <a href="https://www.se.cuhk.edu.hk/people/academic-staff/prof-so-man-cho-anthony/">Prof. Anthony Man-Cho So</a>, where we proved the convergence guarantee of first-order iterative algorithms for nonconvex problems. Before that, I participated in a project on 3D object detection for autonomous driving via deep learning supervised by <a href="https://vegeta2020.github.io/">Mr. Wu Zheng</a> and <a href="https://www.cse.cuhk.edu.hk/people/faculty/fu-chi-wing/">Prof. Philip Chi-Wing Fu</a>. 
-                  </p>
+                <br>
+                <img src="img/profile-1.png" alt="" width="50%" height="auto" class="center">
+                <br>
+                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
+                    <b>Sijin Chen</b>
+                </div>
+                    <p>Undergraduate Researcher</p>
+                <p style="font-size:14px"><b>chensj@link.cuhk.edu.hk</b>, or<br>
+                <b>sjchen0@cse.cuhk.edu.hk</b><br>
+                <p style="font-size:14px">Dept. of Computer Science and Engineering<br>
+                The Chinese University of Hong Kong<br>
+                Sha Tin, New Territories <br>
+                Hong Kong<br>
+                </p>
+                <dd style="font-size:14px"><a href="https://scholar.google.com/citations?user=nVBu33sAAAAJ&hl=en" class="text-info">Google Scholar</a></dd> 
+                <dd style="font-size:14px"><a href="https://www.researchgate.net/profile/Sijin-Chen-6" class="text-info">ResearchGate</a></dd>
+                <dd style="font-size:14px"><a href="https://www.linkedin.com/in/sijin-chen-4a4042194/" class="text-info">LinkedIn</a></dd>
+            </div>
+        </div>
+        <div class="col-5 offset-4" id="main">
 
+            <!-- Intro -->
+            <div>
+                <div style="margin-top:3%; text-align:justify;">                
+                    <p style="font-size:18px">
+                        I am a junior undergraduate at <a href="https://www.cuhk.edu.hk/english/" class="text-info">the Chinese University of Hong Kong</a>, pursuing a major in <a href="https://www.cse.cuhk.edu.hk/" class="text-info">computer science</a> and a minor in <a href="https://www.math.cuhk.edu.hk/" class="text-info">mathematics</a>. My current research interest lies in the theory and provable algorithms for optimization and machine learning, with a general zeal for solving practical problems with rigorous mathematics.
+                    </p>
+                  
+                    <p style="font-size:18px">
+                        I am now working on the second-order stationarity of compressed stochastic gradient descent with <a href="https://users.ece.cmu.edu/~yuejiec/" class="text-info">Prof. Yuejie Chi</a>'s group at CMU. Last year, I did a research project on the convergence guarantee of first-order iterative algorithms for nonconvex problems supervised by <a href="https://www.se.cuhk.edu.hk/people/academic-staff/prof-so-man-cho-anthony/" class="text-info">Prof. Anthony Man-Cho So</a>. Before that, I participated in a project on 3D object detection for autonomous driving via deep learning under the supervision of <a href="https://vegeta2020.github.io/" class="text-info">Mr. Wu Zheng</a> and <a href="https://www.cse.cuhk.edu.hk/people/faculty/fu-chi-wing/" class="text-info">Prof. Philip Chi-Wing Fu</a>. 
+                    </p>
                 </div>
             </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-              <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
-                <b>Sijin Chen</b>
-                <p style="font-family: 'PT Serif'; font-size:22px">Undergraduate Researcher</p>
-              </div>
-              <br>
-              <p style="font-size:14px"><b>chensj@link.cuhk.edu.hk</b>, or<br>
-              <p style="font-size:14px"><b>sjchen0@cse.cuhk.edu.hk</b><br>
-              <p style="font-size:14px">Department of Computer Science and Engineering<br>
-              The Chinese University of Hong Kong<br>
-              Sha Tin, New Territories <br>
-              Hong Kong<br>
-              </p>
-              <dd style="font-size:14px"><a href="https://scholar.google.com/citations?user=nVBu33sAAAAJ&hl=en">Google Scholar</a></dd> 
-              <dd style="font-size:14px"><a href="https://www.researchgate.net/profile/Sijin-Chen-6">ResearchGate</a></dd>
-              <dd style="font-size:14px"><a href="https://www.linkedin.com/in/sijin-chen-4a4042194/">LinkedIn</a></dd>
-          </div>
-            
-            
             <!-- Publications -->
-            <div class="col-md-8">
+            <div>
                 <h2 id="publications">Publications</h2>
                 <ul>
-                <li class="paper" words="JointGPM"><a href="https://arxiv.org/abs/2112.14204">
-                  Non-Convex Joint Community Detection and Group Synchronization via Generalized Power Method</a>.
-                  <b>Sijin Chen</b>, Xiwei Cheng, and Anthony Man-Cho So. <br>
-                  <em>preprint at arXiv</em>
+                <li class="paper" words="JointGPM"><a href="https://arxiv.org/abs/2112.14204" class="text-info">
+                    Non-Convex Joint Community Detection and Group Synchronization via Generalized Power Method</a>.
+                    <b>Sijin Chen</b>, Xiwei Cheng, and Anthony Man-Cho So. <br>
+                    <em>preprint at arXiv</em>
                 </li>
-                <li class="paper" words="CIASSD"><a href="https://arxiv.org/abs/2012.03015">
-                  CIA-SSD: Confident IoU-Aware Single-Stage Object Detector from Point Cloud</a>.
-                  Wu Zheng, Weiliang Tang, <b>Sijin Chen</b>, Li Jiang, and Chi-Wing Fu.<br>
-                  <em>AAAI 2021</em>
+                <li class="paper" words="CIASSD"><a href="https://arxiv.org/abs/2012.03015" class="text-info">
+                    CIA-SSD: Confident IoU-Aware Single-Stage Object Detector from Point Cloud</a>.
+                    Wu Zheng, Weiliang Tang, <b>Sijin Chen</b>, Li Jiang, and Chi-Wing Fu.<br>
+                    <em>AAAI 2021</em>
                 </li>
                 </ul>
             </div>
             
             
             <!-- Projects -->
-            <div class="col-md-8">
-              <h2 id="projects">Projects</h2>
-              <ul>
-              <li class="paper" words="ITCSC">
-                Provably fast algorithms for joint community detection and group synchronization<br>
-                Jun 2021 – present, at <a href="https://www.itcsc.cuhk.edu.hk/">Institute of Theoretical Computer Science and Communications</a>
+            <div>
+                <h2 id="projects">Projects</h2>
+                <ul>
+                <li class="paper" words="ITCSC">
+                    Provably fast algorithms for joint community detection and group synchronization<br>
+                    Jun 2021 – present, at <a href="https://www.itcsc.cuhk.edu.hk/" class="text-info">Institute of Theoretical Computer Science and Communications</a>
+                    <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
+                    We proved a linear convergence guarantee for a first-order iterative method, i.e., the generalized power method (GPM), to solve the joint optimization problem of community detection and group synchronization. The general strategy was to show the contraction-mapping property of each iteration by establishing the Lipschitz property on the projection operator onto the nonconvex feasible set. As a result of our theoretical development, the algorithm is able to recover the ground truth within \(O(n\log^2n)\) time, with a huge lift from the previous method of semidefinite relaxation with \(O(n^{3.5})\) time complexity. I played a major role in proving the guarantee and explored a lot of mathematical tools such as matrix theory, random graphs, numerical analysis, and group theory. Meanwhile, I had a great fun attending the lunch gatherings with professors in ITCSC!
+                    </p>
+                </li>
+                <li class="paper" words="EngSumInt">
+                    3D object detection based on point clouds in autonomous driving scenes<br>
+                    Jun 2020 – Nov 2020, at <a href="https://www.erg.cuhk.edu.hk/erg/SummerResearchInternship" class="text-info">Undergraduate Summer Research Internship</a>
+                </li>
                 <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                  We proved a linear convergence guarantee for a first-order iterative method, i.e., the generalized power method (GPM), to solve the joint optimization problem of community detection and group synchronization. The general strategy was to show the contraction-mapping property of each iteration by establishing the Lipschitz property on the projection operator onto the nonconvex feasible set. As a result of our theoretical development, the algorithm is able to recover the ground truth within \(O(n\log^2n)\) time, with a huge lift from the previous method of semidefinite relaxation with \(O(n^{3.5})\) time complexity. I played a major role in proving the guarantee and explored a lot of mathematical tools such as matrix theory, random graphs, numerical analysis, and group theory. Meanwhile, I had a great fun attending the lunch gatherings with professors in ITCSC!
+                    The project aimed to design 3D convolutional neural networks with self-attention module and IoU-aware
+                    loss function for autonomous driving scenes. In this project, I proposed efficient methods for data augmentation and network structure refinement, and contributed substantial codes in Python, PyTorch, and CUDA for implementation and experiments. The project also won the Best Project Award issued by the Faculty of Engineering, CUHK.
                 </p>
-              </li>
-              <li class="paper" words="EngSumInt">
-                3D object detection based on point clouds in autonomous driving scenes<br>
-                Jun 2020 – Nov 2020, at <a href="https://www.erg.cuhk.edu.hk/erg/SummerResearchInternship">Undergraduate Summer Research Internship</a>
-              </li>
-              <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                The project aimed to design 3D convolutional neural networks with self-attention module and IoU-aware
-                loss function for autonomous driving scenes. In this project, I proposed efficient methods for data augmentation and network structure refinement, and contributed substantial codes in Python, PyTorch, and CUDA for implementation and experiments. The project also won the Best Project Award issued by the Faculty of Engineering, CUHK.
-              </p>
-              </ul>
-          </div>
+                </ul>
+            </div>
           
             <!-- Talks -->
-            <div class="col-md-8">
-              <h2 id="talks">Talks</h2>
-              <ul>
-                <li><a href="talks/wangxy_tut.html">A tutorial on mathematical analysis and linear algebra</a></li>
-              </ul>
-          </div>
+            <div>
+                <h2 id="talks">Talks</h2>
+                <ul>
+                    <li><a href="talks/wangxy_tut.html" class="text-info">A tutorial on mathematical analysis and linear algebra</a></li>
+                </ul>
+            </div>
           
             <!-- CV -->
-            <div class="col-md-8">
-              <h2 id="CV">Curriculum Vitae</h2>
-              <p>View the PDF version <a href="CV.pdf">here</a>.</p>
-          </div>
-            
+            <div>
+                <h2 id="CV">Curriculum Vitae</h2>
+                <p>View the PDF version <a href="CV.pdf" class="text-info">here</a>.</p>
+            </div>
         </div>
-
-
     </div>
-    <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-    
+</div>
+
 </body>
 
 </html>
