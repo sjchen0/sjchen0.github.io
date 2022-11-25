@@ -47,7 +47,7 @@
         <a class="nav-item nav-link" href="index.html">Home</a>
         <a class="nav-item nav-link" href="#publications">Publications</a>
         <a class="nav-item nav-link" href="#projects">Projects</a>
-        <a class="nav-item nav-link" href="#talks">Talks</a>
+        <a class="nav-item nav-link" href="#CV">CV</a>
       </div>
     </div>
   </nav>
@@ -65,39 +65,37 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-2 offset-2 px-1 bg-white position-fixed" id="sticky-sidebar">
+        <div class="col-2 offset-1 px-1 bg-white position-fixed" id="sticky-sidebar">
             <div>
                 <!-- Main Image -->
                 <br>
-                <img src="img/profile-1.png" alt="" width="50%" height="auto" class="center">
+                <img src="img/profile-1.jpeg" alt="" width="90%" height="auto" class="center">
                 <br>
                 <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
                     <b>Sijin Chen</b>
                 </div>
-                    <p>Undergraduate Researcher</p>
+                    <p>Senior Undergraduate</p>
                 <p style="font-size:14px"><b>chensj@link.cuhk.edu.hk</b>, or<br>
                 <b>sjchen0@cse.cuhk.edu.hk</b><br>
-                <p style="font-size:14px">Dept. of Computer Science and Engineering<br>
-                The Chinese University of Hong Kong<br>
-                Sha Tin, New Territories <br>
-                Hong Kong<br>
+                <p style="font-size:14px">Department of Computer Science and Engineering,<br>
+                The Chinese University of Hong Kong
                 </p>
                 <dd style="font-size:14px"><a href="https://scholar.google.com/citations?user=nVBu33sAAAAJ&hl=en" class="text-info">Google Scholar</a></dd> 
                 <dd style="font-size:14px"><a href="https://www.researchgate.net/profile/Sijin-Chen-6" class="text-info">ResearchGate</a></dd>
                 <dd style="font-size:14px"><a href="https://www.linkedin.com/in/sijin-chen-4a4042194/" class="text-info">LinkedIn</a></dd>
             </div>
         </div>
-        <div class="col-5 offset-4" id="main">
+        <div class="col-6 offset-4" id="main">
 
             <!-- Intro -->
             <div>
                 <div style="margin-top:3%; text-align:justify;">                
                     <p style="font-size:18px">
-                        I am a junior undergraduate at <a href="https://www.cuhk.edu.hk/english/" class="text-info">the Chinese University of Hong Kong</a>, pursuing a major in <a href="https://www.cse.cuhk.edu.hk/" class="text-info">computer science</a> and a minor in <a href="https://www.math.cuhk.edu.hk/" class="text-info">mathematics</a>. My current research interest lies in the theory and provable algorithms for optimization and machine learning, with a general zeal for solving practical problems with rigorous mathematics.
+                        I am a senior undergraduate at <a href="https://www.cuhk.edu.hk/english/" class="text-info">the Chinese University of Hong Kong</a> with a major in <a href="https://www.cse.cuhk.edu.hk/" class="text-info">computer science</a> and a minor in <a href="https://www.math.cuhk.edu.hk/" class="text-info">mathematics</a>. My current research interest lies in the theory and provable algorithms for optimization and machine learning, with a general zeal for solving practical problems with rigorous mathematics.
                     </p>
                   
                     <p style="font-size:18px">
-                        I am now working on the second-order stationarity of compressed stochastic gradient descent with <a href="https://users.ece.cmu.edu/~yuejiec/" class="text-info">Prof. Yuejie Chi</a>'s group at CMU. Last year, I did a research project on the convergence guarantee of first-order iterative algorithms for nonconvex problems supervised by <a href="https://www.se.cuhk.edu.hk/people/academic-staff/prof-so-man-cho-anthony/" class="text-info">Prof. Anthony Man-Cho So</a>. Before that, I participated in a project on 3D object detection for autonomous driving via deep learning under the supervision of <a href="https://vegeta2020.github.io/" class="text-info">Mr. Wu Zheng</a> and <a href="https://www.cse.cuhk.edu.hk/people/faculty/fu-chi-wing/" class="text-info">Prof. Philip Chi-Wing Fu</a>. 
+                        I am now working on the second-order stationarity of distributed SGD with communication compression with <a href="https://users.ece.cmu.edu/~yuejiec/" class="text-info">Prof. Yuejie Chi</a>'s group at CMU. Prior to that, I did a research project on the convergence guarantee of first-order iterative algorithms for nonconvex problems supervised by <a href="https://www.se.cuhk.edu.hk/people/academic-staff/prof-so-man-cho-anthony/" class="text-info">Prof. Anthony Man-Cho So</a>. Before that, I participated in a project on 3D object detection for autonomous driving via deep learning under the supervision of <a href="https://vegeta2020.github.io/" class="text-info">Mr. Wu Zheng</a> and <a href="https://www.cse.cuhk.edu.hk/people/faculty/fu-chi-wing/" class="text-info">Prof. Philip Chi-Wing Fu</a>. 
                     </p>
                 </div>
             </div> 
@@ -123,31 +121,39 @@
             <div>
                 <h2 id="projects">Projects</h2>
                 <ul>
-                <li class="paper" words="ITCSC">
-                    Provably fast algorithms for joint community detection and group synchronization<br>
-                    Jun 2021 – present, at <a href="https://www.itcsc.cuhk.edu.hk/" class="text-info">Institute of Theoretical Computer Science and Communications</a>
+                <li class="paper" words="DSGD">
+                    <b>Second-Order Convergence of Distributed SGD with Communication Compression</b><br>
+                    <i>May 2022 – present</i>
                     <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                    We proved a linear convergence guarantee for a first-order iterative method, i.e., the generalized power method (GPM), to solve the joint optimization problem of community detection and group synchronization. The general strategy was to show the contraction-mapping property of each iteration by establishing the Lipschitz property on the projection operator onto the nonconvex feasible set. As a result of our theoretical development, the algorithm is able to recover the ground truth within \(O(n\log^2n)\) time, with a huge lift from the previous method of semidefinite relaxation with \(O(n^{3.5})\) time complexity. I played a major role in proving the guarantee and explored a lot of mathematical tools such as matrix theory, random graphs, numerical analysis, and group theory. Meanwhile, I had a great fun attending the lunch gatherings with professors in ITCSC!
+                        We designed a distributed SGD algorithm with a novel error-feedback mechanism for communication compression, and proved a high-probability bound for the convergence to second-order stationary points of the proposed algorithm by showing the saddle-escaping property with the coupling sequence technique.
+                        The proof managed to remove the commonly used assumptions on local objective similarity, making our algorithm able to accommodate the federated learning settings.
+                    </p>
+                </li>
+                <li class="paper" words="ITCSC">
+                    <b>Provably fast algorithms for joint community detection and group synchronization</b><br>
+                    <i>Jun 2021 – Dec 2021</i>
+                    <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
+                    We proposed a generalized power method (GPM) with spectral initialization to solve a joint problem of group synchronization and community detection. We established an estimation error bound for the spectral initialization using random matrix and random graph arguments, and proved the linear convergence guarantee for GPM, ensuring a significantly lower time complexity than the state-of-the-art semidefinite relaxation method.
                     </p>
                 </li>
                 <li class="paper" words="EngSumInt">
-                    3D object detection based on point clouds in autonomous driving scenes<br>
-                    Jun 2020 – Nov 2020, at <a href="https://www.erg.cuhk.edu.hk/erg/SummerResearchInternship" class="text-info">Undergraduate Summer Research Internship</a>
+                    <b>3D object detection based on point clouds in autonomous driving scenes</b><br>
+                    <i>Jun 2020 – Nov 2020</i>
                 </li>
                 <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                    The project aimed to design 3D convolutional neural networks with self-attention module and IoU-aware
-                    loss function for autonomous driving scenes. In this project, I proposed efficient methods for data augmentation and network structure refinement, and contributed substantial codes in Python, PyTorch, and CUDA for implementation and experiments. The project also won the Best Project Award issued by the Faculty of Engineering, CUHK.
+                    We designed 3D convolutional neural network models for autonomous driving scenes. I proposed data augmentation methods for performance improvement and validated their efficiency for model training on the benchmark dataset KITTI.
                 </p>
                 </ul>
             </div>
           
-            <!-- Talks -->
+            <!-- Talks 
             <div>
                 <h2 id="talks">Talks</h2>
                 <ul>
                     <li><a href="talks/wangxy_tut.html" class="text-info">A tutorial on mathematical analysis and linear algebra</a></li>
                 </ul>
             </div>
+            -->
           
             <!-- CV -->
             <div>
