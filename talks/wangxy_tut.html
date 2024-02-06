@@ -7,17 +7,21 @@
 
 <html lang="en">
 <head>
-  <title>Sijin Chen</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=PT Serif' rel='stylesheet'>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <title>Sijin Chen's Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=PT Serif' rel='stylesheet'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 </head>
 
 <style>
@@ -25,7 +29,6 @@
   p {font-size: 18px;}
   ul {font-size: 18px;}
   li{margin: 10px 0;}
-  ol {font-size: 18px;}
 </style>
   
 
@@ -33,29 +36,22 @@
 
 
 <!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#publications">Publications</a></li> 
-          <li><a href="../index.html#projects">Projects</a></li>
-          <li><a href="../index.html#teaching">Teaching</a></li>
-				  <li><a href="../index.html#CV">CV</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav offset-2">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="#publications">Publications</a>
+        <a class="nav-item nav-link" href="#projects">Projects</a>
+        <a class="nav-item nav-link" href="#honors">Honors/Awards</a>
+        <a class="nav-item nav-link" href="#CV">CV</a>
+      </div>
+    </div>
+  </nav>
   
   <!-- Page Content -->
     <div class="container">
@@ -64,11 +60,26 @@
 
             <!-- Teaching -->
             <div class="col-md-8">
-              <h3 id="teaching">A tutorial on mathematical analysis and linear algebra</h3>
-              <ol>
-                <li><a href="tut1_the_reals.pdf">The Real Number System</a></li>
-                <li><a href="tut2_basic_topology.pdf">Basic Topology</a></li>
-              </ol>
+              <h2>Symmetry and Invariances in Machine Learning</h2>
+              <h4 id="lagrangian-system">Lagrangian system</h4>
+              <p>Consider a dynamic system <span class="math inline">\(q(t)\)</span>, which is a curve moving in <span class="math inline">\(\mathbb R^d\)</span> along time, governed by some update rule described as ODEs. For example, if <span class="math inline">\(q\)</span> stands for the weights of a neural network trained by GD, the governing rule for <span class="math inline">\(q\)</span>, in the continuous-time limit, is the gradient flow <span class="math inline">\(\dot q=-\nabla F(q)\)</span>, where <span class="math inline">\(F\)</span> is the loss function.</p>
+              <p>Another example in phsyics: <span class="math inline">\(q\)</span> stands for the spatial coordinates of an objective moving in <span class="math inline">\(\mathbb R^d\)</span> driven by a conservative potential energy <span class="math inline">\(U\)</span>, which exerts a force <span class="math inline">\(-\nabla U(q)\)</span>. Then Newton’s law says <span class="math inline">\(m\ddot q=-\nabla U(q)\)</span>.</p>
+              <p>A <strong>Lagrangian</strong> of a dynamic system is a real-valued function <span class="math inline">\(L(q(t),\dot q(t),t):\mathbb R^d\times\mathbb R^d\times\mathbb R\to\mathbb R\)</span> that satisfies <span class="math display">\[
+              \frac{d}{dt}\left(\frac{\partial L}{\partial \dot q}\right)=\frac{\partial L}{\partial q},
+              \]</span> named <strong>Euler-Lagrange equation</strong>.</p>
+              <p>In other words, you should find a Lagrangian such that its Euler-Lagrange equation must agree with the governing rule of the system. This is nontrivial in general: some system may <strong>not</strong> have a Lagrangian at all.</p>
+              <p>Fortunately, however, we know that a system driven by a family of gradient algorithms, such as GD and momentum GD, has a Lagrangian function of the form <span class="math display">\[
+              L(q,\dot q,t)=\frac{1}{2}e^{\alpha_t}\dot q^\top\dot q-e^{\beta_t}F(q).
+              \]</span> As expected, by taking appropriate <span class="math inline">\(\alpha_t,\beta_t\)</span>, its Euler-Lagrange equation is exactly the update rule.</p>
+              <h4 id="noethers-theorem">Noether’s theorem</h4>
+              <p>To describe symmetry, we first need a notation that moves <span class="math inline">\(q\)</span> according to the symmetry. It is a map parameterized by a scalar <span class="math inline">\(s\)</span>: <span class="math inline">\(q\mapsto Q(q,s)\)</span>, with <span class="math inline">\(s\)</span> charaterizing the extent of the transformation and <span class="math inline">\(Q(q,0)=q\)</span>. For example, in rotation symmetry, you want to rotate <span class="math inline">\(q\)</span> by the map and <span class="math inline">\(s\)</span> can be the rotation angle.</p>
+              <p><strong>Symmetry</strong> means <strong>invariance of Lagrangian</strong> under this map. Namely, if you slightly move <span class="math inline">\(q\mapsto Q\)</span> for infinitesimal <span class="math inline">\(s\)</span>, the corresponding Lagrangian <span class="math inline">\(L(Q(q,s),\dot Q(q,s),t)\)</span> remains intact: <span class="math display">\[
+              \frac{\partial L}{\partial s}=0.
+              \]</span> <strong>Noether’s theorem</strong> says that if you have such a symmetry, then you have the conservation law <span class="math display">\[
+              \left&lt;\frac{\partial L}{\partial\dot q},\frac{\partial Q}{\partial s}\right&gt;=\text{const}.
+              \]</span> Specifically, when <span class="math inline">\(F\)</span> is rotation-invariant, then <span class="math inline">\(L\)</span> is rotation-invariant. Aaccording to the above we have <span class="math display">\[
+              \dot q^\top Sq\propto e^{-\alpha_t},
+              \]</span> where <span class="math inline">\(S\)</span> is a skew-symmetric matrix.</p>
           </div>
 
             
