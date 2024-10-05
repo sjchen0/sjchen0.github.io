@@ -46,8 +46,9 @@
       <div class="navbar-nav offset-2">
         <a class="nav-item nav-link" href="index.html">Home</a>
         <a class="nav-item nav-link" href="#publications">Publications</a>
-        <a class="nav-item nav-link" href="#projects">Projects</a>
-        <a class="nav-item nav-link" href="#honors">Honors/Awards</a>
+        <a class="nav-item nav-link" href="#teaching">Teaching</a>
+        <a class="nav-item nav-link" href="#honors">Awards</a>
+        <a class="nav-item nav-link" href="#service">Service</a>
         <a class="nav-item nav-link" href="#CV">CV</a>
       </div>
     </div>
@@ -75,40 +76,46 @@
                 <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
                     <b>Sijin Chen</b>
                 </div>
-                    <p>First-Year PhD Student</p>
+                    <p>Second-Year Ph.D. Student</p>
                 <p style="font-size:14px"><b>chensj@princeton.edu</b><br>
-                <p style="font-size:14px">Department of Electrical and Computer Engineering,<br>
+                <p style="font-size:14px">Electrical and Computer Engineering,<br>
                 Princeton University
                 </p>
                 <dd style="font-size:14px"><a href="https://scholar.google.com/citations?user=nVBu33sAAAAJ&hl=en" class="text-info">Google Scholar</a></dd> 
                 <dd style="font-size:14px"><a href="https://www.linkedin.com/in/sijin-chen-4a4042194/" class="text-info">LinkedIn</a></dd>
+                <dd style="font-size:14px"><a href="https://x.com/SijinChen139707" class="text-info">Twitter</a></dd>
             </div>
         </div>
         <div class="col-6 offset-4" id="main">
 
             <!-- Intro -->
             <div>
-                <div style="margin-top:3%; text-align:justify;">                
+                <div style="margin-top:3%; text-align:justify;">
+                    <h2 id="hola"><b>¡Hola!</b></h2>
                     <p style="font-size:18px">
-                        I am a first-year PhD student at Department of Electrical and Computer Engineering, Princeton University. Previously, I obtained B.Sc. in Computer Science with First Class Honours from the Chinese University of Hong Kong, with a minor in Mathematics. My current research interest lies in the theory and provable algorithms for optimization and machine learning, with a general zeal for solving practical problems with rigorous mathematics. My hobbies include piano, soccer (football), photography, among others.
+                        I am a second-year Ph.D. student at Department of Electrical and Computer Engineering, Princeton University. Previously, I obtained B.Sc. in Computer Science with First Class Honours from the Chinese University of Hong Kong, with a minor in Mathematics. </p>
+                    <p style="font-size:18px">
+                        My research interest lies broadly in optimization, statistics, and their association with the theoretical foundations of modern machine learning and financial decision making. Recently, I am in particular focused on the decision theory behind language model decoding strategies. </p>
+                    <p style="font-size:18px">    
+                        My hobbies include piano, soccer (football), photography, among others.
                     </p>
                 </div>
             </div> 
             <!-- Publications -->
             <div>
-                <h2 id="publications">Publications</h2>
+                <h4 id="publications"><b>Publications</b></h4>
                 <ul>
                 <li class="paper" words="Decoding"><a href="https://klusowski.princeton.edu/sites/g/files/toruqf5901/files/documents/chen2024decoding.pdf" class="text-info">
                     Decoding Game: On Minimax Optimality of Heuristic Text Generation Strategies</a>.<br>
                     <b>Sijin Chen</b>, Omar Hagrass, and Jason M. Klusowski, 
-                    <em>Preprint at arXiv</em>, 2024.
+                    <em>Preprint</em>, 2024.
                 </li>
-                <li class="paper" words="PowerEF"><a href="https://proceedings.mlr.press/v238/chen24e.html" class="text-info">
+                <li class="paper" words="PowerEF"><a href="https://proceedings.mlr.press/v238/chen24d.html" class="text-info">
                     Escaping Saddle Points in Heterogeneous Federated Learning via Distributed SGD with Communication Compression</a>.<br>
                     <b>Sijin Chen</b>, Zhize Li, and Yuejie Chi, 
                     <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2024.
                 </li>
-                <li class="paper" words="JointGPM"><a href="https://proceedings.mlr.press/v238/chen24d.html" class="text-info">
+                <li class="paper" words="JointGPM"><a href="https://proceedings.mlr.press/v238/chen24e.html" class="text-info">
                     Non-Convex Joint Community Detection and Group Synchronization via Generalized Power Method</a>.<br>
                     <b>Sijin Chen</b>, Xiwei Cheng, and Anthony Man-Cho So, 
                     <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2024.
@@ -125,59 +132,46 @@
             
             <!-- Projects -->
             <div>
-                <h2 id="projects">Projects</h2>
+                <h4 id="teaching"><b>Teaching</b></h4>
                 <ul>
-                <li class="paper" words="DSGD">
-                    <b>Second-Order Convergence of Distributed SGD with Communication Compression</b><br>
-                    <i>May 2022 – present</i>
-                    <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                        We designed a distributed SGD algorithm with a novel error-feedback mechanism for communication compression, and proved a high-probability bound for the convergence to second-order stationary points of the proposed algorithm by showing the saddle-escaping property with the coupling sequence technique.
-                        The proof managed to remove the commonly used assumptions on local objective similarity, making our algorithm able to accommodate the federated learning settings.
-                    </p>
+                <li class="teaching" words="SML310">
+                    <a href="https://csml.princeton.edu/undergraduates/sml-310-researchprojects" class="text-info">SML310: Research Projects in Data Science</a><br>
+                    <i>Assistant in Instruction</i>, 2024 Fall
                 </li>
-                <li class="paper" words="ITCSC">
-                    <b>Provably fast algorithms for joint community detection and group synchronization</b><br>
-                    <i>Jun 2021 – Dec 2021</i>
-                    <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                    We proposed a generalized power method (GPM) with spectral initialization to solve a joint problem of group synchronization and community detection. We established an estimation error bound for the spectral initialization using random matrix and random graph arguments, and proved the linear convergence guarantee for GPM, ensuring a significantly lower time complexity than the state-of-the-art semidefinite relaxation method.
-                    </p>
-                </li>
-                <li class="paper" words="EngSumInt">
-                    <b>3D object detection based on point clouds in autonomous driving scenes</b><br>
-                    <i>Jun 2020 – Nov 2020</i>
-                </li>
-                <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                    We designed 3D convolutional neural network models for autonomous driving scenes. I proposed data augmentation methods for performance improvement and validated their efficiency for model training on the benchmark dataset KITTI.
-                </p>
                 </ul>
             </div>
+
           
-            <!-- Honors and Awards-->
+            <!-- Awards-->
             <div>
-                <h2 id="honors">Honors and Awards</h2>
+                <h4 id="honors"><b>Awards</b></h4>
                 <ul>
                     <li>
-                        Gordon Wu Fellowship
+                        Gordon Y. S. Wu Fellowship in Engineering
                     </li>
                     <li>
-                        Hong Kong Government Scholarship
+                        Hong Kong Government Scholarship for Outstanding Performance
+                    </li>
+                    <li>
+                        VTech Group of Companies Scholarship
                     </li>
                 </ul>
             </div>
 
 
-            <!-- Talks 
             <div>
-                <h2 id="talks">Talks</h2>
+                <h4 id="service"><b>Professional Service</b></h4>
                 <ul>
-                    <li><a href="talks/wangxy_tut.html" class="text-info">A tutorial on mathematical analysis and linear algebra</a></li>
+                    <li>
+                        <b>Reviewer</b>: International Conference on Learning Representations (ICLR)
+                    </li>
+                    
                 </ul>
             </div>
-            -->
           
             <!-- CV -->
             <div>
-                <h2 id="CV">Curriculum Vitae</h2>
+                <h4 id="CV"><b>Curriculum Vitae</b></h4>
                 <p>View the PDF version <a href="CV.pdf" class="text-info">here</a>.</p>
             </div>
         </div>
