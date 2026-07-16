@@ -1,249 +1,219 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
 <head>
-    <title>Sijin Chen's Homepage</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sijin Chen is a Ph.D. candidate at Princeton University working on discrete generative models, diffusion language models, and statistical foundations of LLM decoding.">
+    <title>Sijin Chen — Princeton University</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=PT Serif' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=PT Serif:700' rel='stylesheet'>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
-  body {font-family: 'PT Serif';}
-  p {font-size: 18px;}
-  ul {font-size: 18px;}
-  li{margin: 10px 0;}
-</style>
-  
-
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="wordmark" href="#top" aria-label="Sijin Chen, home">SC</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#publications">Publications</a>
+                <a href="#industrial-experiences">Experience</a>
+                <a href="#talks">Talks</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#honors">Awards</a>
+                <a href="#service">Service</a>
+            </nav>
+        </div>
+    </header>
 
-<!-- Navigation -->
+    <div class="page-shell" id="top">
+        <aside class="profile" aria-label="Profile">
+            <div class="profile-inner">
+                <img class="profile-photo" src="img/profile.png" alt="Portrait of Sijin Chen" width="3200" height="3200">
 
+                <div class="profile-copy">
+                    <p class="profile-kicker">Princeton University</p>
+                    <h1>Sijin Chen</h1>
+                    <p class="profile-role">Ph.D. Candidate</p>
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav offset-2">
-        <a class="nav-item nav-link" href="index.html">Home</a>
-        <a class="nav-item nav-link" href="#publications">Publications</a>
-        <a class="nav-item nav-link" href="#industrial-experiences">Experience</a>
-        <a class="nav-item nav-link" href="#talks">Talks</a>
-        <a class="nav-item nav-link" href="#teaching">Teaching</a>
-        <a class="nav-item nav-link" href="#honors">Awards</a>
-        <a class="nav-item nav-link" href="#service">Service</a>
-      </div>
-    </div>
-  </nav>
+                    <div class="profile-rule" aria-hidden="true"></div>
 
-<!--
-<ul class="nav justify-content-center">
-    <li class="nav-item"><a href="index.html">Home</a></li>
-    <li class="nav-item"><a href="#publications">Publications</a></li> 
-    <li class="nav-item"><a href="#projects">Projects</a></li>
-    <li class="nav-item"><a href="#talks">Talks</a></li>
-    <li class="nav-item"><a href="#CV">CV</a></li> 
-</ul>
--->
+                    <p class="profile-department">
+                        Princeton, New Jersey
+                    </p>
+                    <a class="email-link" href="mailto:chensj@princeton.edu">chensj@princeton.edu</a>
 
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-2 offset-1 px-1 bg-white position-fixed" id="sticky-sidebar">
-            <div>
-                <!-- Main Image -->
-                <br>
-                <img src="img/profile.png" alt="" width="100%" height="auto" class="center">
-                <br>
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
-                    <b>Sijin Chen</b>
+                    <div class="profile-links" aria-label="External profiles">
+                        <a href="https://scholar.google.com/citations?user=nVBu33sAAAAJ&amp;hl=en">Scholar</a>
+                        <a href="https://www.linkedin.com/in/sijin-chen-4a4042194/">LinkedIn</a>
+                        <a href="https://x.com/SijinChen139707">X / Twitter</a>
+                    </div>
                 </div>
-                    <p>Ph.D. Candidate</p>
-                <p style="font-size:14px"><b>chensj@princeton.edu</b><br>
-                <p style="font-size:14px">Electrical and Computer Engineering,<br>
-                Princeton University
+            </div>
+        </aside>
+
+        <main id="main-content">
+            <section class="intro" id="about">
+                <p class="eyebrow">About</p>
+                <p class="intro-lede">
+                    I am a third-year Ph.D. candidate in the Department of Electrical and Computer Engineering at Princeton University, advised by <a href="https://klusowski.princeton.edu">Prof. Jason M. Klusowski</a>. Previously, I obtained a B.Sc. with First Class Honours in Computer Science from the Chinese University of Hong Kong, with a minor in Mathematics.
                 </p>
-                <dd style="font-size:14px"><a href="https://scholar.google.com/citations?user=nVBu33sAAAAJ&hl=en" class="text-info">Google Scholar</a></dd> 
-                <dd style="font-size:14px"><a href="https://www.linkedin.com/in/sijin-chen-4a4042194/" class="text-info">LinkedIn</a></dd>
-                <dd style="font-size:14px"><a href="https://x.com/SijinChen139707" class="text-info">Twitter</a></dd>
-            </div>
-        </div>
-        <div class="col-6 offset-4" id="main">
+                <p>
+                    My research interests lie in scalable algorithms and statistical foundations for discrete generative models, including:
+                </p>
+                <ul class="research-list">
+                    <li>diffusion language models (DLMs), discrete diffusion, flow and consistency modeling for language;</li>
+                    <li>statistical foundations of LLM decoding, policy-based inference, and connections to stochastic and robust optimization.</li>
+                </ul>
+                <p class="personal-note">Outside research, I enjoy competitive soccer (football), tennis, and piano.</p>
+            </section>
 
-            <!-- Intro -->
-            <div>
-                <div style="margin-top:3%; text-align:left;">
-                    <h2 id="hola"><b>¡Hola!</b></h2>
-                    <p style="font-size:18px">
-                        I am a third-year Ph.D. candidate at Department of Electrical and Computer Engineering, Princeton University, advised by <a href="https://klusowski.princeton.edu" class="text-info">Prof. Jason M. Klusowski</a>. Previously, I obtained B.Sc. with First Class Honours in Computer Science from the Chinese University of Hong Kong, with a minor in Mathematics. </p>
-                    <!--<p style="font-size:18px">
-                        My research interest lies broadly in the mathematical foundation of optimization and statistics. </p>-->
-                    <p style="font-size:18px">
-                        My research interests lie in scalable algorithms and statistical foundations for discrete generative models, including:
-                    </p>
-                    <ul>
-                        <li>diffusion language models (DLMs), discrete diffusion, flow and consistency modeling for language;</li>
-                        <li>statistical foundations of LLM decoding, policy-based inference, and connections to stochastic and robust optimization.</li>
-                    </ul>
-                    <p style="font-size:18px">
-                        My hobbies include competitive soccer (football), tennis, piano, among others.
-                    </p>
+            <section id="publications">
+                <div class="section-heading">
+                    <p class="section-number">01</p>
+                    <h2>Publications</h2>
                 </div>
-            </div> 
-            <!-- Publications -->
-            <div>
-                
-                <h4 id="publications"><b>Publications</b></h4>
-                <ul>
-                <li class="paper" words="Confidence-Based Decoding">
-                    On Confidence-Based Decoding Strategies for Masked Diffusion and Beyond: A Likelihood Optimization Perspective.<br>
-                    <b>S. Chen</b>, C. Yu, J. Shi, J. M. Klusowski, <br>
-                    submitted to <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2026.
-                </li>
-                <li class="paper" words="Multi-Mask Diffusion">
-                    Multi-Mask Diffusion Language Models for Few-Step Generation.<br>
-                    <b>S. Chen</b>*, Y. Ren*, H. Zhao, Z. Cheng, Q. Gu, L. Ying, <br>
-                    <em>Conference on Language Modeling (COLM)</em>, 2026.
-                </li>
-                <li class="paper" words="Beyond Masks"><a href="https://openreview.net/forum?id=VbvXjs5f72" class="text-info">
-                    Beyond Masks: Efficient, Flexible Diffusion Language Models via Deletion-Insertion Processes</a>.<br>
-                    F. Ding*, D. Ding*, <b>S. Chen</b>*, K. Wang, P. Xu, Z. Feng, H. Bai, K. Han, Y. Yan, B. Yuan, J. Sun, <br>
-                    <em>International Conference on Learning Representations (ICLR)</em>, 2026.
-                </li>
-                <li class="paper" words="Decoding"><a href="https://openreview.net/forum?id=Wfw4ypsgRZ" class="text-info">
-                    Decoding Game: On Minimax Optimality of Heuristic Text Generation Strategies</a>.<br>
-                    <b>S. Chen</b>, O. Hagrass, and J. M. Klusowski, <br>
-                    <em>International Conference on Learning Representations (ICLR)</em>, 2025.
-                </li>
-                <li class="paper" words="PowerEF"><a href="https://proceedings.mlr.press/v238/chen24d.html" class="text-info">
-                    Escaping Saddle Points in Heterogeneous Federated Learning via Distributed SGD with Communication Compression</a>.<br>
-                    <b>S. Chen</b>, Z. Li, and Y. Chi, <br>
-                    <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2024.
-                </li>
-                <li class="paper" words="JointGPM"><a href="https://proceedings.mlr.press/v238/chen24e.html" class="text-info">
-                    Non-Convex Joint Community Detection and Group Synchronization via Generalized Power Method</a>.<br>
-                    <b>S. Chen</b>, X. Cheng, and A. M.-C. So, <br>
-                    <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2024.
-                </li>
-                <li class="paper" words="CIASSD"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/16470" class="text-info">
-                    CIA-SSD: Confident IoU-Aware Single-Stage Object Detector from Point Cloud</a>.<br>
-                    W. Zheng, W. Tang, <b>S. Chen</b>, L. Jiang, and C.-W. Fu, <br>
-                    <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2021.
-                </li>
-                </ul>
-                <p>(*: equal contribution)</p>
-            </div>
 
-            <!-- Industrial Experiences -->
-            <div>
-                <h4 id="industrial-experiences"><b>Industrial Experiences</b></h4>
-                <ul>
-                <li class="industrial-experience" words="Two Sigma">
-                    Quantitative Research Intern, <b>Two Sigma</b><br>
-                    New York, NY, <em>Jun. 2026 &ndash; present</em>
-                </li>
-                <li class="industrial-experience" words="ByteDance Seed">
-                    Student Researcher (LLM Research), <b>ByteDance Seed</b><br>
-                    San Jose, CA, <em>Jan. 2026 &ndash; May 2026</em>
-                </li>
-                </ul>
-            </div>
-
-            <!-- Talks -->
-            <div>
-                <h4 id="talks"><b>Talks</b></h4>
-                <ul>
-                <li class="talks" words="dlm">
-                    <a href="https://pli.princeton.edu/events/2025/diffusion-language-models-foundational-principles-advances-variable-length-efficiency" class="text-info">Diffusion Language Models: From Foundational Principles to Advances in Variable-Length Efficiency and Flexibility</a><br>
-                    at <i>Princeton Language and Intelligence (PLI)</i>, Nov. 2025
-                </li>
-                </ul>
-            </div>
-
-            
-            <!-- Teaching -->
-            <div>
-                <h4 id="teaching"><b>Teaching</b></h4>
-                <ul>
-                <li class="teaching" words="ORF309">
-                    <a href="https://orfe.princeton.edu/courses/spring-2026/probability-and-stochastic-systems" class="text-info">ORF309: Probability and Stochastic Systems</a><br>
-                    <i>Teaching Assistant</i>, Fall 2025
-                </li>
-                <li class="teaching" words="ORF570">
-                    <a href="https://orfe.princeton.edu/courses/spring-2025/special-topics-statistics-and-operations-research-transformers-and-large" class="text-info">ORF570: Special Topics in Statistics and Operations Research: Transformers and Large Language Models</a><br>
-                    <i>Teaching Assistant</i>, Spring 2025
-                </li>
-                <li class="teaching" words="SML310">
-                    <a href="https://csml.princeton.edu/undergraduates/sml-310-researchprojects" class="text-info">SML310: Research Projects in Data Science</a><br>
-                    <i>Teaching Assistant</i>, Fall 2024
-                </li>
-
-                </ul>
-            </div>
-
-          
-            <!-- Awards-->
-            <div>
-                <h4 id="honors"><b>Awards</b></h4>
-                <ul>
-                    <li>
-                        Princeton University SEAS Travel Grant
+                <ol class="publication-list">
+                    <li class="paper">
+                        <p class="paper-title">On Confidence-Based Decoding Strategies for Masked Diffusion and Beyond: A Likelihood Optimization Perspective.</p>
+                        <p class="paper-authors"><strong>S. Chen</strong>, C. Yu, J. Shi, J. M. Klusowski</p>
+                        <p class="paper-venue">Submitted to <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2026.</p>
                     </li>
-                    <li>
-                        Gordon Y. S. Wu Fellowship in Engineering
+                    <li class="paper">
+                        <p class="paper-title">Multi-Mask Diffusion Language Models for Few-Step Generation.</p>
+                        <p class="paper-authors"><strong>S. Chen</strong>*, Y. Ren*, H. Zhao, Z. Cheng, Q. Gu, L. Ying</p>
+                        <p class="paper-venue"><em>Conference on Language Modeling (COLM)</em>, 2026.</p>
                     </li>
-                    <li>
-                        Hong Kong Government Scholarship for Outstanding Performance
+                    <li class="paper">
+                        <p class="paper-title"><a href="https://openreview.net/forum?id=VbvXjs5f72">Beyond Masks: Efficient, Flexible Diffusion Language Models via Deletion-Insertion Processes</a>.</p>
+                        <p class="paper-authors">F. Ding*, D. Ding*, <strong>S. Chen</strong>*, K. Wang, P. Xu, Z. Feng, H. Bai, K. Han, Y. Yan, B. Yuan, J. Sun</p>
+                        <p class="paper-venue"><em>International Conference on Learning Representations (ICLR)</em>, 2026.</p>
                     </li>
-                </ul>
+                    <li class="paper">
+                        <p class="paper-title"><a href="https://openreview.net/forum?id=Wfw4ypsgRZ">Decoding Game: On Minimax Optimality of Heuristic Text Generation Strategies</a>.</p>
+                        <p class="paper-authors"><strong>S. Chen</strong>, O. Hagrass, and J. M. Klusowski</p>
+                        <p class="paper-venue"><em>International Conference on Learning Representations (ICLR)</em>, 2025.</p>
+                    </li>
+                    <li class="paper">
+                        <p class="paper-title"><a href="https://proceedings.mlr.press/v238/chen24d.html">Escaping Saddle Points in Heterogeneous Federated Learning via Distributed SGD with Communication Compression</a>.</p>
+                        <p class="paper-authors"><strong>S. Chen</strong>, Z. Li, and Y. Chi</p>
+                        <p class="paper-venue"><em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2024.</p>
+                    </li>
+                    <li class="paper">
+                        <p class="paper-title"><a href="https://proceedings.mlr.press/v238/chen24e.html">Non-Convex Joint Community Detection and Group Synchronization via Generalized Power Method</a>.</p>
+                        <p class="paper-authors"><strong>S. Chen</strong>, X. Cheng, and A. M.-C. So</p>
+                        <p class="paper-venue"><em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2024.</p>
+                    </li>
+                    <li class="paper">
+                        <p class="paper-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/16470">CIA-SSD: Confident IoU-Aware Single-Stage Object Detector from Point Cloud</a>.</p>
+                        <p class="paper-authors">W. Zheng, W. Tang, <strong>S. Chen</strong>, L. Jiang, and C.-W. Fu</p>
+                        <p class="paper-venue"><em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2021.</p>
+                    </li>
+                </ol>
+                <p class="publication-note">(*: equal contribution)</p>
+            </section>
+
+            <section id="industrial-experiences">
+                <div class="section-heading">
+                    <p class="section-number">02</p>
+                    <h2>Industrial Experiences</h2>
+                </div>
+                <div class="entry-list">
+                    <article class="entry">
+                        <div>
+                            <h3>Two Sigma</h3>
+                            <p>Quantitative Research Intern</p>
+                        </div>
+                        <p class="entry-meta">New York, NY<br><span>Jun. 2026 &ndash; present</span></p>
+                    </article>
+                    <article class="entry">
+                        <div>
+                            <h3>ByteDance Seed</h3>
+                            <p>Student Researcher (LLM Research)</p>
+                        </div>
+                        <p class="entry-meta">San Jose, CA<br><span>Jan. 2026 &ndash; May 2026</span></p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="talks">
+                <div class="section-heading">
+                    <p class="section-number">03</p>
+                    <h2>Talks</h2>
+                </div>
+                <div class="entry-list">
+                    <article class="entry entry-single">
+                        <div>
+                            <h3><a href="https://pli.princeton.edu/events/2025/diffusion-language-models-foundational-principles-advances-variable-length-efficiency">Diffusion Language Models: From Foundational Principles to Advances in Variable-Length Efficiency and Flexibility</a></h3>
+                            <p>Princeton Language and Intelligence (PLI)</p>
+                        </div>
+                        <p class="entry-meta"><span>Nov. 2025</span></p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="teaching">
+                <div class="section-heading">
+                    <p class="section-number">04</p>
+                    <h2>Teaching</h2>
+                </div>
+                <div class="entry-list">
+                    <article class="entry">
+                        <div>
+                            <h3><a href="https://orfe.princeton.edu/courses/spring-2026/probability-and-stochastic-systems">ORF309: Probability and Stochastic Systems</a></h3>
+                            <p>Teaching Assistant</p>
+                        </div>
+                        <p class="entry-meta"><span>Fall 2025</span></p>
+                    </article>
+                    <article class="entry">
+                        <div>
+                            <h3><a href="https://orfe.princeton.edu/courses/spring-2025/special-topics-statistics-and-operations-research-transformers-and-large">ORF570: Special Topics in Statistics and Operations Research: Transformers and Large Language Models</a></h3>
+                            <p>Teaching Assistant</p>
+                        </div>
+                        <p class="entry-meta"><span>Spring 2025</span></p>
+                    </article>
+                    <article class="entry">
+                        <div>
+                            <h3><a href="https://csml.princeton.edu/undergraduates/sml-310-researchprojects">SML310: Research Projects in Data Science</a></h3>
+                            <p>Teaching Assistant</p>
+                        </div>
+                        <p class="entry-meta"><span>Fall 2024</span></p>
+                    </article>
+                </div>
+            </section>
+
+            <div class="closing-grid">
+                <section id="honors">
+                    <div class="section-heading compact-heading">
+                        <p class="section-number">05</p>
+                        <h2>Awards</h2>
+                    </div>
+                    <ul class="plain-list">
+                        <li>Princeton University SEAS Travel Grant</li>
+                        <li>Gordon Y. S. Wu Fellowship in Engineering</li>
+                        <li>Hong Kong Government Scholarship for Outstanding Performance</li>
+                    </ul>
+                </section>
+
+                <section id="service">
+                    <div class="section-heading compact-heading">
+                        <p class="section-number">06</p>
+                        <h2>Service</h2>
+                    </div>
+                    <p class="service-copy"><strong>Reviewer</strong><br>ICLR&rsquo;25, ICML&rsquo;26, NeurIPS&rsquo;26</p>
+                </section>
             </div>
 
-
-            <div>
-                <h4 id="service"><b>Professional Service</b></h4>
-                <ul>
-                    <li>
-                        <b>Reviewer</b>: ICLR&rsquo;25, ICML&rsquo;26, NeurIPS&rsquo;26
-                    </li>
-                    
-                </ul>
-            </div>
-        
-        </div>
+            <footer>
+                <p>&copy; 2026 Sijin Chen</p>
+                <a href="#top">Back to top &uarr;</a>
+            </footer>
+        </main>
     </div>
-</div>
-
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
