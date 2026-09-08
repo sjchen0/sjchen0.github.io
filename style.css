@@ -294,7 +294,7 @@ main > section,
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.08em;
-    content: counter(publication, decimal-leading-zero);
+    content: counter(publication, decimal);
 }
 
 .paper p {
